@@ -1,0 +1,140 @@
+*{padding: 0; margin:0; box-sizing: border-box; font-family : Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+header{
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url('https://www.appventurez.com/wp-content/uploads/2020/02/dating-apps-premium-plans.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 110px;
+    height: 70px;
+    padding-top : 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    background: rgb(228, 197, 202);
+    border-radius: 8px;
+}
+.plan{
+    background-color: grey;
+}
+.submit-btn
+{
+	width: 20%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #DDA0DD, #FF1493);
+	color: black;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+#content{
+    width:1000px;
+    display:block;
+    margin: 0 auto;
+    background: #fff;
+    padding: 5px 20px;
+    list-style-type: circle;
+  }
+  ul.range{list-style-type: none;text-align: center;}
+  .work h1{
+    padding: 7%;
+    text-align: center;
+    color: rgb(131, 57, 131);
+}
+footer {
+	color: #E5E8EF;
+	background: #000D;
+	padding: 50px 0; 
+}
+footer .footer-container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+footer .social-media img{
+	width: 22px;
+}
+footer .logo {
+	width: 180px;
+	color: #fff;
+}
+footer .social-media a{
+	margin-right: 10px;
+	font-size: 22px;
+	text-decoration: none;
+}
+footer .right-col h3{
+	font-size: 26px;
+}
+footer .border{
+	width: 100px;
+	height: 4px;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	margin: 2px;
+}
+footer .newsletter-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer .txtb {
+	flex: 1;
+	padding: 18px 40px;
+	font-size: 16px;
+	background: #343A40;
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+	min-width: 260px;
+	margin-top: 20px;
+	color: white;
+}
+footer .btn {
+	margin-top: 20px;
+	padding: 18px 40px;
+	font-size: 16px;
+	color: #f1f1f1;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: opacity .3s linear;	
+}
+footer .btn:hover {
+	opacity: .7;
+}

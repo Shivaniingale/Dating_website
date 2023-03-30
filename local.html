@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="local.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<!-- swiper link -->
+	<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+</head>
+<body>
+
+	<div class="main">
+		<nav>
+			<div style="display:flex; align-items: center; gap:5px">
+				<img src="dating_logo.png" width="15px" height="100px" class="logo">
+				<div class="menu" style="display: inline-block; font-weight:bold; font-size: 30px;"></div>
+			</div>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="tour.html">TOUR</a></li>
+				<li><a href="login.html">LOGIN</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+
+				<h2 style="font-family: cursive; font-size:70px;color:#4a4a49;">Get Who<br><span style="font-family: cursive; font-size:70px; margin-left: 40px;color: #4a4a49;">Get You</span></h2>
+				<br><br>
+
+				<p style="color:tomato; font-weight: bold; font-size:30px;margin-left: 25px;" >START free TODAY</p>
+				<hr><br>
+				<!-- I am <br> <p style="color:black">male</p><input type="radio" name="gender"><p style="color:black"> Female</p><input type="radio" name="gender"><br> -->
+			<div class="box">
+
+				<div>
+					<p style="color:black;font-size:20px"> I am: <br> <br>
+						<div class="gender"><input type="radio" name="Gender">Male</div>
+						<br>
+						<div class="gender"><input type="radio" name="Gender">Female </div>
+					</p>
+				</div>
+						
+				<div>
+					<p style="color:black;margin-left: 12px;font-size:20px"> I am looking for: <br> <br>
+						<div class="gender"><input type="radio" name="Gender1">Male</div>
+						<br>
+						<div class="gender"><input type="radio" name="Gender1">Female </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="c2">
+			<h1>SINGLES NEAR ME – FINDING UNIQUE LOCAL OPPORTUNITIES</h1>
+			<h2>Find singles near you</h2>
+		</div>
+		<!-- Search starts -->
+		<div class="search">
+			<div class="search__input">
+			  <span class="material-icons"> search </span>
+			  <input type="text" placeholder="Choose your city"/>
+			</div>
+		</div>
+		
+		<h2 style="color: rgb(114, 111, 111);padding-left: 10%; padding-bottom: 1%;">WEST</h2>
+		<!-- swiper start -->
+		<div class="swiper mySwiperdemo mypadding">
+			<div class="swiper-wrapper swiper-slide-demo">
+			  <div class="swiper-slide">
+				<a href="http://127.0.0.1:5501/#">
+				<img src="alaska.webp" alt="" />
+				<div class="centered">Find singles in <br><b>Alaska</b></div>
+					</a>
+			</div>
+			  <div class="swiper-slide">
+				<a href="#">
+				<img src="arizona.webp" alt="" />
+				<div class="centered">Find singles in <br><b>Arizona</b></div>
+			</a>  
+			</div>
+			  <div class="swiper-slide">
+				<a href="#">
+				<img src="californiaa.webp" alt="" />
+				<div class="centered">Find singles in <br><b>California</b></div>
+			</a>  
+			</div>
+			<div class="swiper-slide">
+				<a href="#">
+			  <img src="colo.webp" alt="" />
+			  <div class="centered">Find singles in <br><b>Colorado</b></div>
+			</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#">
+			  <img src="hawaii.webp" alt="" />
+			  <div class="centered">Find singles in <br><b>Hawaii</b></div>
+			</a> 
+			</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		  </div>
+	  
+		  <!-- Swiper JS -->
+		  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	  
+		  <!-- Initialize Swiper -->
+		  <script>
+			var swiper = new Swiper(".mySwiper", {
+			  spaceBetween: 50,
+			  centeredSlides: true,
+			  loop: true,
+			  autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			  },
+			});
+		  </script>
+	  
+		  <script>
+			var swiper = new Swiper(".mySwiperdemo", {
+			  slidesPerView: 3.5,
+			  spaceBetween: 2,
+			  slidesPerGroup: 2,
+			  loop: false,
+			  loopFillGroupWithBlank: false,
+			  pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			  },
+			});
+		  </script>
+
+		  <!-- swiper2 -->
+		  <h2 style="color: rgb(114, 111, 111);padding-left: 10%; padding-top: 8%; padding-bottom: 1%;">Mid-WEST</h2>
+		<!-- swiper start -->
+		<div class="swiper mySwiperdemo mypadding">
+			<div class="swiper-wrapper swiper-slide-demo">
+			  <div class="swiper-slide">
+				<a href="#">
+				<img src="lllinois.webp" alt="" />
+				<div class="centered">Find singles in <br><b>lllinois</b></div>
+					</a>
+			</div>
+			  <div class="swiper-slide">
+				<a href="#">
+				<img src="indiana.webp" alt="" />
+				<div class="centered">Find singles in <br><b>Indiana</b></div>
+			</a>  
+			</div>
+			  <div class="swiper-slide">
+				<a href="#">
+				<img src="lowa.webp" alt="" />
+				<div class="centered">Find singles in <br><b>Lowa</b></div>
+			</a>  
+			</div>
+			<div class="swiper-slide">
+				<a href="#">
+			  <img src="kansas.webp" alt="" />
+			  <div class="centered">Find singles in <br><b>Kansas</b></div>
+			</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#">
+			  <img src="michigan.webp" alt="" />
+			  <div class="centered">Find singles in <br><b>Michigan</b></div>
+			</a> 
+			</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		  </div>
+	  
+		  <!-- Swiper JS -->
+		  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	  
+		  <!-- Initialize Swiper -->
+		  <script>
+			var swiper = new Swiper(".mySwiper", {
+			  spaceBetween: 50,
+			  centeredSlides: true,
+			  loop: true,
+			  autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			  },
+			});
+		  </script>
+	  
+		  <script>
+			var swiper = new Swiper(".mySwiperdemo", {
+			  slidesPerView: 3.5,
+			  spaceBetween: 2,
+			  slidesPerGroup: 2,
+			  loop: false,
+			  loopFillGroupWithBlank: false,
+			  pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			  },
+			});
+		  </script>
+
+		    <!-- swiper3 -->
+			<h2 style="color: rgb(114, 111, 111);padding-left: 10%; padding-top: 8%; padding-bottom: 1%;">North-EAST</h2>
+			<!-- swiper start -->
+			<div class="swiper mySwiperdemo mypadding">
+				<div class="swiper-wrapper swiper-slide-demo">
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="connecticut.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Connecticut</b></div>
+						</a>
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="maine.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Maine</b></div>
+				</a>  
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="massachusetts.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Massachusetts</b></div>
+				</a>  
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="newhampshire.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Hampshire</b></div>
+				</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="Rhode island.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Rhode Island</b></div>
+				</a> 
+				</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			  </div>
+		  
+			  <!-- Swiper JS -->
+			  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		  
+			  <!-- Initialize Swiper -->
+			  <script>
+				var swiper = new Swiper(".mySwiper", {
+				  spaceBetween: 50,
+				  centeredSlides: true,
+				  loop: true,
+				  autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				  },
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+		  
+			  <script>
+				var swiper = new Swiper(".mySwiperdemo", {
+				  slidesPerView: 3.5,
+				  spaceBetween: 2,
+				  slidesPerGroup: 2,
+				  loop: false,
+				  loopFillGroupWithBlank: false,
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+
+			//   <!-- swiper4 -->
+			<h2 style="color: rgb(114, 111, 111);padding-left: 10%; padding-top: 8%; padding-bottom: 1%;">South-WEST</h2>
+			// <!-- swiper start -->
+			<div class="swiper mySwiperdemo mypadding">
+				<div class="swiper-wrapper swiper-slide-demo">
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="arkansas.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Arkansas</b></div>
+						</a>
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="louisiana.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Louisiana</b></div>
+				</a>  
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="oklahoma.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Oklahoma</b></div>
+				</a>  
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="texas.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Texas</b></div>
+				</a>
+				</div>
+				
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			  </div>
+		  
+			  <!-- Swiper JS -->
+			  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		  
+			  <!-- Initialize Swiper -->
+			  <script>
+				var swiper = new Swiper(".mySwiper", {
+				  spaceBetween: 50,
+				  centeredSlides: true,
+				  loop: true,
+				  autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				  },
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+		  
+			  <script>
+				var swiper = new Swiper(".mySwiperdemo", {
+				  slidesPerView: 3.5,
+				  spaceBetween: 2,
+				  slidesPerGroup: 2,
+				  loop: false,
+				  loopFillGroupWithBlank: false,
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+
+			  <!-- swiper5 -->
+			<h2 style="color: rgb(114, 111, 111);padding-left: 10%; padding-top: 8%; padding-bottom: 1%;">South-EAST</h2>
+			<!-- swiper start -->
+			<div class="swiper mySwiperdemo mypadding">
+				<div class="swiper-wrapper swiper-slide-demo">
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="alabama.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Alabama</b></div>
+						</a>
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="delaware.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Delaware</b></div>
+				</a>  
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="florida.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Florida</b></div>
+				</a>  
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="georgia.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Georgia</b></div>
+				</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="kentucky.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Kentucky</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="maryland.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Maryland</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="mississippi.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Mississippi</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="virginia.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>virginia</b></div>
+				</a> 
+				</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			  </div>
+		  
+			  <!-- Swiper JS -->
+			  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		  
+			  <!-- Initialize Swiper -->
+			  <script>
+				var swiper = new Swiper(".mySwiper", {
+				  spaceBetween: 50,
+				  centeredSlides: true,
+				  loop: true,
+				  autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				  },
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+		  
+			  <script>
+				var swiper = new Swiper(".mySwiperdemo", {
+				  slidesPerView: 3.5,
+				  spaceBetween: 2,
+				  slidesPerGroup: 2,
+				  loop: false,
+				  loopFillGroupWithBlank: false,
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+
+			  <!-- swiper6 -->
+			<h2 style="color: rgb(114, 111, 111);padding-left: 10%; padding-top: 8%; padding-bottom: 1%;">Top Cities</h2>
+			<!-- swiper start -->
+			<div class="swiper mySwiperdemo mypadding">
+				<div class="swiper-wrapper swiper-slide-demo">
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="boston.webp" alt="" />
+					<div class="centered">Find singles in <br><b>Boston</b></div>
+						</a>
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="san diego.webp" alt="" />
+					<div class="centered">Find singles in <br><b>San Diego</b></div>
+				</a>  
+				</div>
+				  <div class="swiper-slide">
+					<a href="#">
+					<img src="san francisco.webp" alt="" />
+					<div class="centered">Find singles in <br><b>San Francisco</b></div>
+				</a>  
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="denver.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Denver</b></div>
+				</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="austin.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Austin</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="houston.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Houston</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="san antonio.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>San Antonio</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="new york.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>New York</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="seattle.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Seattle</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="chicago.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Chicago</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="atlanta.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Atlanta</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="las vegas.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Las Vegas</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="portland.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>portland</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="washington.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Washington</b></div>
+				</a> 
+				</div>
+
+				<div class="swiper-slide">
+					<a href="#">
+				  <img src="los angeles.webp" alt="" />
+				  <div class="centered">Find singles in <br><b>Los Angeles</b></div>
+				</a> 
+				</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			  </div>
+		  
+			  <!-- Swiper JS -->
+			  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		  
+			  <!-- Initialize Swiper -->
+			  <script>
+				var swiper = new Swiper(".mySwiper", {
+				  spaceBetween: 50,
+				  centeredSlides: true,
+				  loop: true,
+				  autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				  },
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+		  
+			  <script>
+				var swiper = new Swiper(".mySwiperdemo", {
+				  slidesPerView: 3.5,
+				  spaceBetween: 2,
+				  slidesPerGroup: 2,
+				  loop: false,
+				  loopFillGroupWithBlank: false,
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				});
+			  </script>
+
+			  <div id="para">
+				<p>
+				At DATING, we help people find real love. We’re the number one trusted dating app in the U.S. for good reason*. Over our 20 years of providing online international and local dating services, we’ve consistently proven our ability to foster deep and meaningful connections between our members. Just ask the over 2 million people we’ve already helped to find each other.  
+				<br><br>
+				This is because we don’t just answer the question, “are there singles near me?”. Rather we try to find nearby singles who also match your personality and lifestyle, using our Compatibility Matching System. Let’s take a look at how we can help you.  
+			  </p>
+
+			  <h1>HOW TO MEET SINGLES NEAR AND THE CHALLENGES OF LOCAL DATING</h1>
+
+			  <h3>
+				Looking to meet local singles in real life in the U.S.? Here are some of the best places to start:</h3>
+<br> <br>
+<ul type="radio">
+<li>If you’re wondering, “are there even singles near me?”, we suggest you go to your local park. It’s a nice casual environment to socialize and see just how many people are single in your area.</li>  
+<li>Try to join a local club or organization for people who share your interests. At least you’ll know you have one thing in common.</li>
+<li>A coffee shop is a great place to encounter local singles and can be less socially intense than a bar.</li>  
+</ul>
+
+<h3>
+	While these are great ways to meet people, there are also some obstacles to making a connection:</h3>
+<br> <br>
+<ul type="radio">
+<li><b>Timing</b> – You often have to be in the right place at the right time to meet the right person. You might walk into a coffee shop they just walked out of 5 minutes ago.</li>  
+<li><b>Approach</b> – Talking to strangers can be daunting. They may already be with someone or not open to a conversation right then.</li>
+<li><b>Schedules</b> – The activities around meeting new people can take time. Many people have other obligations and priorities and can’t save time for it.  </li>  
+</ul>
+
+<h1>WE HELP YOU FIND MEANINGFUL LOCAL CONNECTIONS</h1>
+
+<p>DATING helps you not just find local singles in the U.S. but singles from all over the world, like Canada, Australia, the U.K and many more. This is mainly because of our high-quality dating member pool of open-minded, inclusive and authentic singles who are looking for a meaningful relationship.</p>
+				
+<h1>
+	HOW DATING WORKS
+</h1>
+
+<h3>There are many added features and services on DATING but your dating journey on our platform basically involves three steps to help you find singles near me:</h3>
+
+<ol type="1">
+	<li>Upon registration, you’ll be asked to fill out our Compatibility Quiz so we can get to know you better. The results from the Quiz will be compiled into your Personality Profile, which serves as the roadmap for how we match you.</li>  
+	<li>Your Match List will then fill up with people who we feel you may be compatible with – so explore them in your own time.</li>
+	<li>Once you’ve found some people who spark your interest, get in touch and start getting to know them. Once things heat up, you can even have a Video Date right on our platform.</li>  
+	</ol>
+
+	<h1>
+		FILTER FOR SINGLES NEAR YOU AND MUCH MORE
+	</h1>
+
+	<p>Many local dating sites offer the opportunity to find singles nearby by using an appropriate filter. With DATING you can filter not only by geographically, but also by criteria such as age, common interests, smokers, desire to have children and much more. </p>
+
+	<h1>DETAILED PROFILES THAT GET STRAIGHT TO THE POINT</h1>
+
+	<p>When looking for singles near me, one can often opt for impulse on dating apps. DATING encourages the opposite. We provide detailed profiles that share basic biographic information and also really get to the heart of the person.
+ <br><br>
+		However, we also believe dating should be fun and light-spirited. Our Lifestyle section, presented as a series of visual cards, lets you quickly see where you share similarities in characteristics, interests and passions.  Because in the end, it’s not distance that should decide about your happy end on your local dating journey, but personality.</p>
+
+		<h1>FEEL SAFE WHILE YOU CONNECT WITH LOCAL SINGLES</h1>
+		<p>As mentioned, DATING is the number one trusted dating in the U.S. This is because of our commitment to on-site interactions being respectful, open-minded and honest. Our customer care team is available to handle any issues while our Trust & Safety team is constantly monitoring account activity and investigates any complaints of unusual, inappropriate or falsified accounts.</p>
+
+		<h1>LOVE MIGHT BE CLOSER THAN YOU THINK</h1>
+
+		<p>Whether it’s a chance encounter at your local park or using DATING to quickly establish singles near me, we don’t think how you met someone is as important as the fact that you met them. So why spend another day not finding that special someone nearby who is exactly right for you? 
+<br><br>
+			Over our 20 years, we’ve learned a lot about what makes people happy together and how important it is to match the right people. So why spend another day single? Love might be around that next corner. Come find it with us on DATING by joining for free today.
+			<br><br>
+			*source: 2022 Survey of 1,300 Respondents from the US, UK, Canada and Australia</p>
+</div>
+
+
+<footer>
+	<div class="footer-container">
+		<div class="left-col">
+			<img src="dating_logo.png" style="width: 100px;"><br><br><br>
+			<div class="logo"></div>
+			<div class="social-media">
+				<h3>Follow us</h3>
+		<a href=" #" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>|
+		<a href=" #" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>|
+		<a href=" #" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>|
+		<a href=" #" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div><br><br>
+				<!-- <a href=" #"><img src="https://cdn3d.iconscout.com/3d/free/thumb/facebook-4703920-3915172.png" height="50" width="50"></a>
+				<a href=" #"><img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5zdGFncmFtJTIwaWNvbnxlbnwwfHwwfHw%3D&w=1000&q=80" height="50" width="50"></a>
+				<a href=" #"><img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png" height="50" width="50"></a>
+				<a href=" #"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" height="50" width="50"></a>
+			</div><br><br> -->
+			<h6 class="rights-text">Copyright@2023. All rights reserved by Dating Website</h6>
+		</div>
+		<div class="right-col">
+			<h3 style="color: #fff">Our Website</h3>
+			<div class="border"></div><br>
+			<a href="aboutus.html">AboutUs</a><br>
+			<a href="#">Terms & Conditions</a><br>
+			<a href="#">Legal</a><br>
+			<a href="#">Local dating</a><br>
+			<a href="Press.html">Press And Research</a><br>
+			<a href="Success.html">Sucess Stories</a><br>
+ 
+		</div>
+		<div class="right-col">
+			<h3 style="color: #fff">Our Newsletter</h3>
+			<div class="border"></div><br>
+			<h4>Enter Your Email to get our News and updates.</h4>
+			<form class="newsletter-form">
+				<input class="txtb" type="email" placeholder="Enter Your Email">
+				<input class="btn" type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+ </footer>
+
+ </div>
+ </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" img src="https://media.licdn.com/dms/image/C4E0BAQHfHdbaswiWeA/company-logo_200_200/0/1620922384677?e=2147483647&v=beta&t=JkuCOEU9LYUz9BPKTHB3ZdpOgJMJKh26w5NcXljCJYk">
+	<title>LOGIN SignUp</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- It will redirect to the Home Page after submitting the form -->
+  <script>
+  $(document).ready(function(){
+    $("form").submit(function(){
+      alert("Great Job !");
+    });
+  });
+  </script>
+</head>
+<body>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+				<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<img src="https://cdn3d.iconscout.com/3d/free/thumb/facebook-4703920-3915172.png">
+				<img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5zdGFncmFtJTIwaWNvbnxlbnwwfHwwfHw%3D&w=1000&q=80">
+				<img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png">
+			</div>
+			
+			<!-- Login Form -->
+			<form id="login" class="input-group" action="index.html">
+				<div class="inp">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/2048px-User_icon_2.svg.png"><input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+				</div>
+				<div class="inp">
+					<img src="https://banner2.cleanpng.com/20201019/qsy/transparent-login-icon-ui-ux-interface-icon-password-icon-5f8d1f49a50b00.192264991603084105676.jpg"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required">
+				</div>
+				<!-- <input type="checkbox" class="check-box">Remember Password -->
+				<br><br>
+				<a href="forgetpassword.html">Forget Password?</a>
+				<br><br><br>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+
+			<div class="other" id="other">
+				<div class="instead">
+					<h3>or</h3>
+				</div>
+				<button class="connect" onclick="google()">
+					<img src="https://pixlok.com/wp-content/uploads/2021/04/Google-Icon-PNG-768x768.jpg"><span>Sign in with Google</span>
+				</button>
+				<button class="connect" onclick="facebook()">
+					<img src="https://assets.stickpng.com/images/584ac2d03ac3a570f94a666d.png"><span>Sign in with Facebook</span>
+				</button>
+				<button class="connect" onclick="twitter()">
+					<img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png"><span>Sign in with Twitter</span>
+				</button>
+			</div>
+			
+			<!-- Registration Form -->
+			<form id="register" class="input-group">
+				<!-- <div class="social-icons">
+					<img src="https://img.freepik.com/free-vector/man-icon-outline-white-background_1308-115587.jpg?w=740&t=st=1677320882~exp=1677321482~hmac=95407239765d25096bdaf0a05b978d52cf47f830525e107fff1f7341bf85ba5e">
+					<img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5zdGFncmFtJTIwaWNvbnxlbnwwfHwwfHw%3D&w=1000&q=80">
+					<img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png">
+				</div> -->
+				<!-- <input type="text" class="input-field" placeholder="Full Name" required="required"> -->
+				<p style="text-align: left;padding-top: 0px;">I am:</p>
+				<div class="side">
+				<div id="genderrow" class="column" role="listbox">
+					<span class="rowLabel"></span>
+					<label class="radioWrap " role="listitem">
+					<div class="radioWrapContent" aria-label=" I am Woman
+					">
+					<input type="checkbox" name="gender" id="mygenderW" value="1" tabindex="0">
+					<img src=" female.png" width="100px" height="50px" />
+					</div>
+					</label>
+					<label class="radioWrap " role="listitem">
+					<div class="radioWrapContent" aria-label=" I am Man
+					">
+					<input type="checkbox" name="mygender" id="mygenderM" value="0" tabindex="0">
+					<img src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/user_man_male_profile_account-512.png" width="100px" height="50px" />
+					</div>
+					</label>
+					</div>
+				</div>
+					<br><br><br>
+					<p style="text-align: left;padding-top: 30px;">I am Looking for:</p>
+					<div class="side">
+					<div id="egenderRow" class="column" role="listbox">
+					<input type="hidden" name="egender" id="hiddenEgender" value="">
+					<span class="rowLabel"></span>
+					<label class="radioWrap " role="listitem">
+					<div class="radioWrapContent" aria-label="I am looking for Woman">
+					<input type="checkbox" name="" id="egenderW" value="1" tabindex="0">
+					<img src=" female.png" width="100px" height="50px" />
+					</div>
+					</label>
+					<label class="radioWrap " role="listitem">
+					<div class="radioWrapContent" aria-label="I am looking for Man">
+					<input type="checkbox" name="" id="egenderM" value="0" tabindex="0">
+					<img src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/user_man_male_profile_account-512.png" width="100px" height="50px" />
+					</div>
+					</label>
+					</div>
+				</div>
+				<br>
+				<!-- <input type="text" class="input-field" placeholder="Full Name" required="required"> -->
+				<input type="email" class="input-field" placeholder="Email Address" required="required">
+				<input type="password" class="input-field" placeholder="Create Password" name="psame" required="required">
+				<input type="password" class="input-field" placeholder="Confirm Password" name="psame" required="required">
+
+
+				<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms & Conditions
+				<button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
